@@ -1,3 +1,9 @@
 python -m venv .venv
 
+Set-ExecutionPolicy -Scope Process Bypass
+
 .\.venv\Scripts\activate
+
+python train.py
+
+streamlit run app.py
